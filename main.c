@@ -20,7 +20,7 @@ int main() {
     int num2;
     scanf("%d %d",&num1, &num2);
 
-    /*
+
     //print the armstrong
     printf("The Armstrong numbers are:");
     for (int i = min(num1,num2); i < Max(num1,num2) ; ++i) {
@@ -30,7 +30,7 @@ int main() {
     }
     printf("\n");
 
-*/
+
 
     //print the palindromes
     printf("The Palindrome are: ");
@@ -42,7 +42,7 @@ int main() {
     }
     printf("\n");
 
-/*
+
     // print the primes
     printf("The Prime numbers are: ");
     for (int i = min(num1,num2); i < Max(num1,num2) ; ++i) {;
@@ -60,6 +60,6 @@ int main() {
             printf("%d ",i);
         }
     }
-*/
+
     return 0;
 }
