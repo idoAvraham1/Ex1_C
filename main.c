@@ -14,25 +14,24 @@ int min(int num1,int num2) {
     }
     return num2;
 }
-int getDigit(int num,int i);
+
 int main() {
     int num1;
     int num2;
     scanf("%d %d",&num1, &num2);
 
-
+    /*
     //print the armstrong
     printf("The Armstrong numbers are:");
     for (int i = min(num1,num2); i < Max(num1,num2) ; ++i) {
-        ;
         if(isArmstrong(i)) {
             printf("%d ",i);
         }
     }
     printf("\n");
 
+*/
 
-/*
     //print the palindromes
     printf("The Palindrome are: ");
     for (int i = min(num1,num2); i < Max(num1,num2) ; ++i) {
@@ -43,7 +42,7 @@ int main() {
     }
     printf("\n");
 
-
+/*
     // print the primes
     printf("The Prime numbers are: ");
     for (int i = min(num1,num2); i < Max(num1,num2) ; ++i) {;

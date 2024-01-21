@@ -1,12 +1,11 @@
 #include "NumClass.h"
-#include <math.h>
 #define FALSE 0
 #define TRUE 1
 
 int factorial(int num);
 int digitCount(int num);
 int getDigit(int num,int i);
-
+int myPow(int x, int y);
 
 // check if num is strong
 int isStrong(int num){
@@ -30,7 +29,7 @@ int isPrime(int num){
     if(num <= 1) {
         return FALSE;
     }
-    for ( int i = 2; i < sqrt(num) ; ++i) {
+    for ( int i = 2; i < num ; ++i) {
         if(num % i ==0) {
             return FALSE;
         }
@@ -64,4 +63,14 @@ int factorial(int num) {
 // return the i't digits in num
 int getDigit(int num,int i){
    return (num / (int)pow(10, i)) % 10;
+}
+//return x^y
+int myPow(int x, int y) {
+    int tmp=y;
+    int ans=1;
+    while(tmp>0) {
+        ans*=x;
+        tmp--;
+    }
+    return ans;
 }
