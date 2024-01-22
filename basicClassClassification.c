@@ -62,7 +62,7 @@ int factorial(int num) {
 
 // return the i't digits in num
 int getDigit(int num,int i){
-   return (num / (int)pow(10, i)) % 10;
+   return (num / (int)myPow(10, i)) % 10;
 }
 //return x^y
 int myPow(int x, int y) {
