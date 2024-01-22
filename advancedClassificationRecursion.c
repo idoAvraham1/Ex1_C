@@ -32,7 +32,6 @@ int isPalindromeRec(int num, int digits){
   int msb= getDigit(num,digits-1);
   int lsb= getDigit(num,0);
   if(msb==lsb){
-
       //  the number without the lsb and msb
       int trimmednum = (int) ((num - myPow(10,digits-1)*msb ) ) / 10;
 

@@ -1,6 +1,8 @@
 CC = gcc
 CFLAGS = -Wall
 
+.PHONY: all clean
+
 all: recursives recursived  loopd loops  maindrec maindloop  mains
 
 #loops static library
