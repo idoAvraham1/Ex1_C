@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall
 
-.PHONY: all clean
+.PHONY: all clean loops loopd recursives
 
 all: recursives recursived  loopd loops  maindrec maindloop  mains
 
