@@ -26,10 +26,10 @@ int isStrong(int num){
 
 //check if num is prime
 int isPrime(int num){
-    if(num <= 1) {
+    if(num < 1) {
         return FALSE;
     }
-    for ( int i = 2; i*i < num ; ++i) {
+    for ( int i = 2; i*i <=num ; i++) {
         if(num % i ==0) {
             return FALSE;
         }
