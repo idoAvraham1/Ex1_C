@@ -36,7 +36,7 @@ int isarmstrong(int num,int i,int sum){
  * @return TRUE if the number is Armstrong, FALSE otherwise.
  */
 int isArmstrong(int num){
-    if(num<0) {return false;} // negative values to be ignored
+    if(num<0) {return FALSE;} // negative values to be ignored
     int sum=isarmstrong(num, digitCount(num)-1,0);
     if(sum==num ){
         return TRUE;
