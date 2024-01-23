@@ -18,7 +18,7 @@ int myPow(int x, int y);
 int isStrong(int num){
     if(num<0)  // strong number not defined for negative values
     {
-        return false;
+        return FALSE;
     }
     int numOfDigits= digitCount(num); 
     int SumOfDigits=0;

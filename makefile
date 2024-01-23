@@ -52,8 +52,8 @@ libclassrec.so: $(OBJ_REC)
 	$(CC) -shared -fpic -o $@ $^
 
 # Include NumClass.h as a dependency for the implicit rules
-#%.o: %.c NumClass.h
-#	$(CC) $(CFLAGS) -c $<
+%.o: %.c NumClass.h
+	$(CC) $(CFLAGS) -c $<
 
 # clean all
  clean:
