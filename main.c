@@ -2,7 +2,7 @@
 #include "NumClass.h"
 
 
-int Max(int num1, int num2){
+int Max1(int num1, int num2){
     if(num1>num2){
         return num1;
     }
@@ -23,7 +23,7 @@ int main() {
 
     //print the armstrong
     printf("The Armstrong numbers are:");
-    for (int i = min(num1,num2); i <= Max(num1,num2) ; ++i) {
+    for (int i = min(num1,num2); i <= Max1(num1,num2) ; ++i) {
         if(isArmstrong(i)) {
             printf("%d ",i);
         }
