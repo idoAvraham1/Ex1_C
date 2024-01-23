@@ -3,6 +3,8 @@ CFLAGS = -Wall -g
 OBJ_REC= advancedClassificationRecursion.o basicClassClassification.o
 OBJ_LOOP= advancedClassificationLoop.o basicClassClassification.o 
 
+.PHONY: all clean
+
 all:loopd maindrec maindloop mains recursives recursived loops
 
 # Create static library with OBJ_LOOP
@@ -30,7 +32,7 @@ maindloop: main.o libclassloops.so
 	$(CC) $(CFLAGS) main.o ./libclassloops.so -o maindloop
 
 # Compile main.c
-main.o: main.c
+main.o: main.c NumClass.h
 	$(CC) $(CFLAGS) -c main.c
 
 # Create static library with OBJ_LOOP
@@ -48,6 +50,11 @@ libclassrec.a: $(OBJ_REC)
 # Create shared library with OBJ_REC
 libclassrec.so: $(OBJ_REC)
 	$(CC) -shared -fpic -o $@ $^
+
+# Include NumClass.h as a dependency for the implicit rules
+%.o: %.c NumClass.h
+	$(CC) $(CFLAGS) -c $<
+
 # clean all
  clean:
 	rm -f *.o *.a *.so mains maindrec maindloop
