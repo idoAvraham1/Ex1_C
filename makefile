@@ -3,7 +3,7 @@ CFLAGS = -Wall -g
 
 #recursives recursived loops
 
-all:loopd maindrec maindloop mains
+all:loopd maindrec maindloop mains recursives recursived loops
 
 #loops static library
 loops: libclassloops.a
